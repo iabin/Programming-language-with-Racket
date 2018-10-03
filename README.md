@@ -1,10 +1,13 @@
 # Programming-language-with-Racket
 
-GRAMAR EBNF 
-LANGUAGE ERCFWBAEL/L (Exceptions Recursive Conditionals functions With Boolean Arithmetic Expressions Lists and Lazy )
 
-The gramar is defined as 
-Is a lazy language, uses enviroments, has exceptions, and supports continuations
+## LANGUAGE ERCFWBAEL/L (Exceptions Recursive Conditionals functions With Boolean Arithmetic Expressions Lists and Lazy )
+
+
+## Is a lazy language, uses enviroments, has exceptions, and supports continuations
+
+# The gramar is defined as 
+```
 <code>
 (define-type ERCFWBAEL/L
    [idS (i symbol?)]
@@ -22,7 +25,7 @@ Is a lazy language, uses enviroments, has exceptions, and supports continuations
    [throwsS (exception-id symbol?)]
    [try/catchS (bindings (listof bindingS?)) (body ERCFWBAEL/L?)])
    </code>
-   
+   ```
    That are the expresions acepted by the language 
    
    There is a function called desugar that tranforms this language to a version 
