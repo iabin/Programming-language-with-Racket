@@ -4,7 +4,8 @@ GRAMAR EBNF
 LANGUAGE ERCFWBAEL/L (Exceptions Recursive Conditionals functions With Boolean Arithmetic Expressions Lists and Lazy )
 
 The gramar is defined as 
-Is a lazy language and uses enviroments
+Is a lazy language, uses enviroments, has exceptions, and supports continuations
+<code>
 (define-type ERCFWBAEL/L
    [idS (i symbol?)]
    [numS (n number?)]
@@ -20,6 +21,7 @@ Is a lazy language and uses enviroments
    [appS (fun-expr ERCFWBAEL/L?) (args (listof ERCFWBAEL/L?))]
    [throwsS (exception-id symbol?)]
    [try/catchS (bindings (listof bindingS?)) (body ERCFWBAEL/L?)])
+   </code>
    
    That are the expresions acepted by the language 
    
